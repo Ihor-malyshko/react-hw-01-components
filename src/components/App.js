@@ -1,18 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './App.css';
+import Profile from './profile/Profile';
+import user from '../assets/users.json';
 
-function App(props) {
-  console.log(props);
+function App() {
   return (
-    <>
-      <h2>{props.text}</h2>
-    </>
+    <Profile
+      name={user.name}
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      stats={user.stats}
+    />
   );
 }
 
 export default App;
-
-App.defaultProps = {
-  text: 'name',
-};
