@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
-import { defaultImage } from '../../assets/default';
+import { defaultImage } from '../../assistance/default';
 
 function Profile({ name, tag, location, avatar, stats }) {
-  console.log(stats);
   return (
     <div className={styles.profile}>
       <div className={styles.description}>

@@ -1,0 +1,16 @@
+.transaction {
+  background-color: gray;
+}
+
+.line {
+}
+
+.white {
+  composes: line;
+  background-color: white;
+}
+
+.gray {
+  composes: line;
+  background-color: lightgrey;
+}
