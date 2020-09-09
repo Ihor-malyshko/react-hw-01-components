@@ -46,7 +46,7 @@
   margin: 0;
   padding: 0;
 }
-.item-stats {
+.itemStats {
   display: flex;
   flex-direction: column;
   align-items: center;
