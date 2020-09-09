@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
 import randomColor from '../../assistance/randomColor';
 
@@ -22,5 +22,20 @@ function Statistics({ title, stats }) {
     </div>
   );
 }
+
+Statistics.defaultProps = {
+  title: '',
+};
+
+Statistics.propType = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ),
+};
 
 export default Statistics;
